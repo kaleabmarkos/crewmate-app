@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+// src/components/App.js
+import React from 'react';
+import CrewmateForm from './components/CrewmateForm';
+import CrewmateGallery from './components/CrewmateGallery';
+import './App.css'
+import { useState, useEffect } from 'react';
+import { supabase } from '../src/supabaseClient'; 
 
-function App() {
+
+
+
+const App = () => {
+  const [crewmates, setCrewmates] = useState([]);
+  const [loading, setLoading] = useState(false); // Loading state
+
+  const fetchCrewmates = async () => {
+      setLoading(true); // Set loading to true
+      const { data, error } = await supabase.from('crewmates').select();
+      setLoading(false); // Set loading to false
+      if (error) {
+          console.error('Error fetching crewmates:', error);
+      } else {
+          console.log('Fetched Crewmates:', data); // Log fetched data
+          setCrewmates(data); // Update state with fetched crewmates
+      }
+  };
+
+  useEffect(() => {
+      fetchCrewmates(); // Fetch crewmates on component mount
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <h1>Welcome to the Crewmate Creator!</h1>
+          <CrewmateForm fetchCrewmates={fetchCrewmates} />
+          {loading ? (
+              <p>Loading...</p>
+          ) : (
+              <CrewmateGallery crewmates={crewmates} />
+          )}
+      </div>
   );
-}
+};
 
 export default App;
