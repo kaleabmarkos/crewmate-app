@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Web Development Project 7 - Crewmate Creator
+Submitted by: Kaleab Gessese
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web app: The Crewmate Creator allows users to create, view, update, and delete custom crewmates with various attributes such as name, speed, and color. Users can also see a gallery of all their created crewmates.
 
-## Available Scripts
+Time spent: 6 hours spent in total
 
-In the project directory, you can run:
+Required Features
+The following required functionality is completed:
 
-### `npm start`
+ [check] A create form allows users to add new crewmates
+ [check] Users can name the crewmate and set the crewmate's attributes by clicking on one of several values
+ [check] The site displays a summary page of all the user's added crewmates
+ [check] A previously created crewmate can be updated from the crewmate list
+[check]  A previously created crewmate can be deleted from the crewmate list
+[check]  Each crewmate has a direct, unique link to an info page about them
+[check] The following optional features are implemented:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ A crewmate can be given a category upon creation which restricts their attributes
+ The site displays summary statistics about a user's crew on their crew page
+ The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
+The following additional features are implemented:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ List anything else that you added to improve the site's functionality!
+Video Walkthrough
+Here's a walkthrough of implemented user stories:
+![f5](https://github.com/user-attachments/assets/b650b551-2306-4ee5-943e-0aeba78380df)
 
-### `npm test`
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <!-- Replace this with whatever GIF tool you used! -->
+GIF created with ...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Recommended tools: [Kap](https://getkap.co/) for macOS [ScreenToGif](https://www.screentogif.com/) for Windows [peek](https://github.com/phw/peek) for Linux. -->
+Notes
+Describe any challenges encountered while building the app.
+Challenges included ensuring correct data fetching from the Supabase database, managing state updates properly in React, and handling form validations effectively.
 
-### `npm run build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Copyright [2024] [kaleab gessese]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        http://www.apache.org/licenses/LICENSE-2.0
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
